@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef, useState } from 'react'
-import EditTodo from './editTodo'
 import DeleteTodo from './DeleteTodo'
 import IsCompleteTodo from './IsCompleteTodo'
 import { TodoInitialState } from '../App'
+import EditTodo from './EditTodo.jsx'
 
 const IndividualTodo = ({ todoId, description, isCompleted, index }) => {
 
