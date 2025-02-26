@@ -14,17 +14,7 @@ const AddTodo = () => {
     }
     const handleAddTodo = () => {
         if (description.length == 0) {
-            return
-        }
-        if (todos.length == 0) {
-            setCount(0)
-            setTodos([{
-                todoId: `TODO1`,
-                description,
-                isCompleted: false,
-                dateAdded: new Date(),
-                hidden: false
-            }])
+            alert('Enter valid description')
             return
         }
         setTodos([
